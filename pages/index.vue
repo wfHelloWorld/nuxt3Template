@@ -1,14 +1,8 @@
 <template>
-    <nuxt-link to="/about">about</nuxt-link>
-    <div>
-        Hello Nuxt from page, auto generate routes
-    </div>
+  <nuxt-link to="/about">about</nuxt-link>
+  <div>Hello Nuxt from page, auto generate routes</div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
