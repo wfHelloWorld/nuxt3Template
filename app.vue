@@ -1,5 +1,6 @@
+import { NuxtPage } from './.nuxt/components';
 <template>
   <div>
-    <ContentDoc/>
+    <NuxtPage />
   </div>
 </template>
