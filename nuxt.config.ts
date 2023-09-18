@@ -7,12 +7,11 @@ export default defineNuxtConfig({
     '@element-plus/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     '@vueuse/nuxt',
-    '@vite-pwa/nuxt'
+    '@vite-pwa/nuxt',
+    'nuxt-swiper',
+    '@unocss/nuxt'
   ],
-  css: [
-    // 导入样式
-    // '你的路径' 
-  ],
+  css: ['@unocss/reset/tailwind.css'],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
