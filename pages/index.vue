@@ -14,33 +14,21 @@
 import { useCounter } from '~/stores/useCounter'
 const store = useCounter() 
 
-const { $pwa } = useNuxtApp()
+// const { $pwa } = useNuxtApp()
 onMounted(() => {
-  $pwa.install()
+  // $pwa.install()
 
-  let registration = $pwa.getSWRegistration()
-  setInterval(() => {
-    if (registration) {
-      registration.update()
-    } else {
-      $pwa.install()
-      registration = $pwa.getSWRegistration()
-    }
-    console.log('更新')
-  }, 500000) // 500秒自动更新
-
-  // registerSW({
-  //   immediate: true,
-
-  //   // // 提示需要更新
-  //   // onNeedRefresh() {
-  //   //   console.log('nee refresh')
-  //   // },
-
-  //   onRegisteredSW(_url, registration) {
-
+  // let registration = $pwa.getSWRegistration()
+  // setInterval(() => {
+  //   if (registration) {
+  //     registration.update()
+  //   } else {
+  //     $pwa.install()
+  //     registration = $pwa.getSWRegistration()
   //   }
-  // })
+  //   console.log('更新')
+  // }, 500000) // 500秒自动更新
+
 })
 
 
