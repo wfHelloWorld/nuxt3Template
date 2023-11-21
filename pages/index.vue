@@ -1,7 +1,4 @@
 <template>
-  <!-- PWA -->
-  <ReloadPrompt></ReloadPrompt>
-
   <nuxt-link to="/about">about</nuxt-link>
   <div>Hello Nuxt from page, auto generate routes</div>
   <div>{{ store.count }}</div>
@@ -14,22 +11,9 @@
 import { useCounter } from '~/stores/useCounter'
 const store = useCounter() 
 
-// const { $pwa } = useNuxtApp()
-onMounted(() => {
-  // $pwa.install()
+// onMounted(() => {
 
-  // let registration = $pwa.getSWRegistration()
-  // setInterval(() => {
-  //   if (registration) {
-  //     registration.update()
-  //   } else {
-  //     $pwa.install()
-  //     registration = $pwa.getSWRegistration()
-  //   }
-  //   console.log('更新')
-  // }, 500000) // 500秒自动更新
-
-})
+// })
 
 
 const { x, y } = useMouse()

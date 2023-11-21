@@ -1,6 +1,6 @@
 <template>
   <div>default layout</div>
-  <el-button class="item">
+  <el-button type="primary" plain>
     <router-link  to="/">index</router-link>
   </el-button>
   <el-button>

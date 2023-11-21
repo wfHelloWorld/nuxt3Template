@@ -9,5 +9,5 @@ export const useCounter = defineStore('counter', {
       this.count++
     }
   },
-  persist: true,
+  persist: true, // 浏览器是否缓存
 })
