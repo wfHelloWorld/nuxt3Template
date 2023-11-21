@@ -12,4 +12,5 @@ export default defineNuxtConfig({
   ],
   css: ['@unocss/reset/tailwind.css'],
   // css: ['/src/css/reset.css'],
+  pinia: { autoImports: ['defineStore'] }, // 自动导入
 })
