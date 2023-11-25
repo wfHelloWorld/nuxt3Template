@@ -13,4 +13,5 @@ export default defineNuxtConfig({
   css: ['@unocss/reset/tailwind.css'],
   // css: ['/src/css/reset.css'],
   pinia: { autoImports: ['defineStore'] }, // 自动导入
+  devServer: { port: 3010 } // 设置开发端口
 })
